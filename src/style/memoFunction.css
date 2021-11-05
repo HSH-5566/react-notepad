@@ -1,0 +1,25 @@
+.FunctionArea {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .saveBtn,
+  .removeBtn {
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    background: #5e454b;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+  }
+  .saveBtn:hover,
+  .removeBtn:hover {
+    background: #261c2c;
+    cursor: pointer;
+  }
+  

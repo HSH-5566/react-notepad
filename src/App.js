@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import MemoContainer from "./container/MemoContainer";
+import Header from "./container/Header";
+import Footer from "./container/Footer";
+import "./style/default.css";
+import "./style/memoWrite.css";
+import "./style/memoFunction.css";
+import "./style/memoList.css";
+import "./style/memoModal.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <MemoContainer />
+      <Footer />
     </div>
   );
 }
-
-export default App;

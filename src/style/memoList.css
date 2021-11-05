@@ -1,0 +1,187 @@
+.ListArea {
+    background: #5e454b;
+    border: 10px solid #261c2c;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
+  }
+  
+  li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+  }
+  
+  li > a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+    background-color: #fff;
+    background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
+    background-size: 100% 1.4em;
+    box-shadow: 0 4px 4px -4px black;
+  }
+  
+  li > a .ListObject {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  li > a .ListObject .Context {
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    position: absolute;
+    top: 150%;
+    z-index: 2;
+    transition: all 0.45s;
+    background-color: #fff;
+    background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
+    background-size: 100% 1.3em;
+    background-attachment: local;
+  }
+  
+  /* li > a .ListObject .Color{
+    background-color: rgb(227, 240, 52);
+    background-image: linear-gradient(rgb(201, 201, 201) 0.1em, transparent 0.1em);
+  } */
+  
+  li > a:hover .Context {
+    top: 20%;
+  }
+  
+  .memoTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1em;
+    transform: translate(-50%, -50%);
+  }
+  
+  .memoDate {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.75em;
+  }
+  
+  /* .delBtn {
+    position: absolute;
+    right: 0px;
+    border: none;
+    width: 29px;
+    height: 29px;
+    background-color: #f8585b;
+    font-weight: bold;
+  }
+  .delBtn:hover {
+    background-color: #ff2225;
+    color: whitesmoke;
+    cursor: pointer;
+  } */
+  
+  .innerMemoTitle {
+    font-weight: bold;
+  }
+  
+  .ModifyTitle {
+    width: 90%;
+  }
+  
+  .ModifyMemo {
+    width: 90%;
+    height: 60%;
+    resize: none;
+  }
+  
+  .ModifyMemo::-webkit-scrollbar,
+  .modalBox::-webkit-scrollbar,
+  .Context::-webkit-scrollbar,
+  .Memo::-webkit-scrollbar,
+  .ListArea::-webkit-scrollbar,
+  .WriteArea::-webkit-scrollbar {
+    width: 10px;
+  }
+  .ModifyMemo::-webkit-scrollbar-thumb,
+  .modalBox::-webkit-scrollbar-thumb,
+  .Context::-webkit-scrollbar-thumb,
+  .Memo::-webkit-scrollbar-thumb,
+  .ListArea::-webkit-scrollbar-thumb,
+  .WriteArea::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+  .ModifyMemo::-webkit-scrollbar-track,
+  .modalBox::-webkit-scrollbar-track,
+  .Context::-webkit-scrollbar-track,
+  .Memo::-webkit-scrollbar-track,
+  .ListArea::-webkit-scrollbar-track,
+  .WriteArea::-webkit-scrollbar-track {
+    background-color: #e8e8e8;
+  }
+  
+  .delBtn {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: 2px solid #cacaca;
+    background: #d81956;
+    background-image: radial-gradient(
+      at 40% 40%,
+      white,
+      rgba(255, 255, 255, 0.2) 8px
+    );
+    transition: all 0.35s;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
+    z-index: 2;
+  }
+  
+  .delBtn:hover {
+    transform: translate(30%, -20%);
+    background-color: #ff0b10;
+    cursor: pointer;
+  }
+  
+  .Tack {
+    display: block;
+    position: absolute;
+    left: -20%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    border-bottom: 8px solid #a8a8a8;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0;
+    width: 3px;
+    transform: rotate(-140deg);
+    /* width: 5px;
+    height: 5px;
+    background: #b8b8b8;
+    transform: rotate(-30deg); */
+    /* border-top: 5px solid transparent;
+    border-right: 10px solid #b8b8b8; */
+  }
+  .Hole {
+    position: absolute;
+    background: #5e454b;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  /* .delBtn:hover .tri {
+    width: 3px;
+    border-bottom: 8px solid #b8b8b8;
+    border-right: 3px solid transparent;
+    border-left: 4px solid transparent;
+  } */
+  

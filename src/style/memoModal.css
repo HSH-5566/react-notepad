@@ -1,0 +1,71 @@
+.modalBtn {
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid #5e454b;
+    border-left: 25px solid transparent;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
+    transition: all 0.35s;
+    z-index: 2;
+  }
+  
+  .modalBtn:hover {
+    border-top: 35px solid #5e454b;
+    border-left: 35px solid transparent;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: block;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal button {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 3rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .modal button:hover {
+    cursor: pointer;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  
+  .modalBox {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: #fff;
+    background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
+    background-size: 100% 1.3em;
+    width: 60%;
+    height: 80%;
+    text-align: center;
+    overflow: auto;
+    background-attachment: local;
+  }
+  
+  .modalBox > .modalMemo {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .modalBox > .ModifyTitle {
+    margin-top: 13px;
+    margin-bottom: 10px;
+  }
+  
