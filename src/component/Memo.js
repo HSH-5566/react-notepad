@@ -9,7 +9,7 @@ const Memo = ({ title, memo, handleTitle, handleMemo, removeBtn, saveBtn }) => {
         value={title}
         className="Title"
         onChange={handleTitle}
-        placeholder="제목"
+        placeholder="제목을 입력해주세요"
         maxLength="50"
       />
       <span className="TitleNum">{title.length} / 50</span>
@@ -18,7 +18,7 @@ const Memo = ({ title, memo, handleTitle, handleMemo, removeBtn, saveBtn }) => {
         value={memo}
         className="Memo"
         onChange={handleMemo}
-        placeholder="내용"
+        placeholder="내용을 입력해주세요"
       ></textarea>
       <MemoFunction removeBtn={removeBtn} saveBtn={saveBtn} />
     </div>
