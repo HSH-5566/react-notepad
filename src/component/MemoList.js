@@ -77,7 +77,6 @@ const MemoList = ({
       </li>
       {modal ? (
         <MemoModal
-          key={id}
           id={id}
           title={title}
           memo={memo}

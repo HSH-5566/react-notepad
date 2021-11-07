@@ -13,7 +13,7 @@ const MemoModal = ({
   const [editTitle, setEditTitle] = useState(false);
 
   return (
-    <div className="modal">
+    <div className="modal" key={id}>
       <button onClick={modalClose}>&times;</button>
       <div className="modalBox">
         {editTitle ? (
