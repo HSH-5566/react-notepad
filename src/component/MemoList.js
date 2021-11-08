@@ -13,16 +13,22 @@ const MemoList = ({
   const [editMemo, setEditMemo] = useState(false);
   const [editTitle, setEditTitle] = useState(false);
   const [modal, setModal] = useState(false);
+  const [like, setLike] = useState(false);
 
   const modalClose = () => {
     setModal(false);
   };
+
+  const likeBtnClick = () => {
+    setLike(!like);
+  }
 
   return (
     <>
       <li>
         <a href="#!">
           <div className="ListObject">
+            <div className={`likeBtn ${like ? 'likeBtnClick' : ''}`} onClick={likeBtnClick}></div>
             <div onClick={(e) => setModal(true)} className="modalBtn"></div>
             <div className="Hole"></div>
             <button className="delBtn" onClick={() => del(id)}>

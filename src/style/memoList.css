@@ -123,6 +123,22 @@
   .WriteArea::-webkit-scrollbar-track {
     background-color: #e8e8e8;
   }
+
+  .likeBtn{
+    position:absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid #ffd700;
+    top: 5%;
+    left: 5%;
+  }
+
+  .likeBtnClick {
+    background: #ffd700;
+  }
+
   
   .delBtn {
     width: 26px;
