@@ -15,10 +15,6 @@ const MemoList = ({
   const [modal, setModal] = useState(false);
   const [like, setLike] = useState(false);
 
-  const modalClose = () => {
-    setModal(false);
-  };
-
   const likeBtnClick = () => {
     setLike(!like);
   }
@@ -89,7 +85,7 @@ const MemoList = ({
           saveDate={saveDate}
           updateMemo={updateMemo}
           updateTitle={updateTitle}
-          modalClose={modalClose}
+          modalClose={()=>setModal(false)}
         />
       ) : null}
     </>

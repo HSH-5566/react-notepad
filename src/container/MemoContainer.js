@@ -5,7 +5,7 @@ import MemoList from "../component/MemoList";
 const MemoContainer = () => {
   const [title, setTitle] = useState("");
   const [memo, setMemo] = useState("");
-  let [memoList, setMemoList] = useState([]);
+  const [memoList, setMemoList] = useState([]);
   const memoId =
     memoList.length === 0 ? 1 : memoList[memoList.length - 1].id + 1;
 
@@ -18,7 +18,7 @@ const MemoContainer = () => {
   };
 
   const saveBtn = () => {
-    let date = new Date();
+    const date = new Date();
     const memoObject = {
       id: memoId,
       title,
