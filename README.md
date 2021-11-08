@@ -8,4 +8,5 @@
 언어 - js, html, css
 라이브러리 - React
 
-### `npm start`
+## 기능
+![1](https://user-images.githubusercontent.com/80798580/140742531-1521bf6b-786d-4cb3-b4ce-641b279bf5e9.PNG)
