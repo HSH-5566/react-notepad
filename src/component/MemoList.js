@@ -21,7 +21,7 @@ const MemoList = ({
   return (
     <>
       <li>
-        <a>
+        <a href="{() => false}">
           <div className="ListObject">
             <div onClick={(e) => setModal(true)} className="modalBtn"></div>
             <div className="Hole"></div>

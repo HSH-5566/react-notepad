@@ -49,9 +49,9 @@ const MemoModal = ({
           />
         ) : (
           <p className="modalMemo" onClick={(e) => setEditMemo(!editMemo)}>
-            {memo.split("\n").map((line) => {
+            {memo.split("\n").map((line, idx) => {
               return (
-                <span>
+                <span key={idx}>
                   {line}
                   <br />
                 </span>
