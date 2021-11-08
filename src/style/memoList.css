@@ -9,9 +9,11 @@
     vertical-align: top;
     width: 33.3%;
   }
-  
+
   li > a {
     display: block;
+    color: black;
+    cursor: default;
     width: auto;
     text-decoration: none;
     margin: 5px;
