@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./memoModal.css";
 
 const MemoModal = ({
   id,
@@ -39,7 +40,7 @@ const MemoModal = ({
         <hr />
         {editMemo ? (
           <textarea
-            className="ModifyMemo"
+            className="modifyMemo"
             defaultValue={memo}
             autoFocus
             onBlur={(e) => {

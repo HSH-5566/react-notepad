@@ -1,28 +1,29 @@
 import React from "react";
-import MemoFunction from "./MemoFunction";
+import MemoFunction from "../memoFunction/MemoFunction";
+import "./memoForm.css";
 
-const Memo = ({ title, memo, handleTitle, handleMemo, removeBtn, saveBtn }) => {
+const MemoForm = ({ title, memo, handleTitle, handleMemo, removeBtn, saveBtn }) => {
   return (
-    <div className="MemoArea">
-      <input
+    <div className="memoArea">
+      <input 
         type="text"
         value={title}
-        className="Title"
+        className="title"
         onChange={handleTitle}
         placeholder="제목을 입력해주세요"
         maxLength="50"
       />
-      <span className="TitleNum">{title.length} / 50</span>
+      <span className="titleNum">{title.length} / 50</span>
       <hr />
       <textarea
         value={memo}
-        className="Memo"
+        className="memo"
         onChange={handleMemo}
         placeholder="내용을 입력해주세요"
       ></textarea>
       <MemoFunction removeBtn={removeBtn} saveBtn={saveBtn} />
     </div>
-  );
-};
+    );
+  };
 
-export default Memo;
+export default MemoForm;

@@ -1,4 +1,4 @@
-body {
+  body {
     background: #cee5d0;
   }
   .App {
@@ -6,7 +6,7 @@ body {
     text-align: center;
   }
   
-  .Header {
+  .header {
     display: inline;
     border: 5px solid black;
     border-radius: 10px;
@@ -17,21 +17,60 @@ body {
     background: #5e454b;
   }
   
-  .Footer {
+  .footer {
     color: black;
     text-align: right;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   }
   
-  .Screen {
+  .screen {
     display: flex;
   }
   
-  .WriteArea,
-  .ListArea {
+  .writeArea,
+  .listArea {
     margin: 0 auto;
     margin-top: 20px;
     width: 50vw;
     height: 80vh;
     overflow: auto;
+  }
+
+  .writeArea {
+    border: 10px solid #fff;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
+    background-color: #fff;
+    background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
+    background-size: 100% 1.3em;
+  }
+
+  .listArea {
+    background: #5e454b;
+    border: 10px solid #261c2c;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
+  }
+
+  .modifyMemo::-webkit-scrollbar,
+  .modalBox::-webkit-scrollbar,
+  .context::-webkit-scrollbar,
+  .memo::-webkit-scrollbar,
+  .listArea::-webkit-scrollbar,
+  .writeArea::-webkit-scrollbar {
+    width: 10px;
+  }
+  .modifyMemo::-webkit-scrollbar-thumb,
+  .modalBox::-webkit-scrollbar-thumb,
+  .context::-webkit-scrollbar-thumb,
+  .memo::-webkit-scrollbar-thumb,
+  .listArea::-webkit-scrollbar-thumb,
+  .writeArea::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+  .modifyMemo::-webkit-scrollbar-track,
+  .modalBox::-webkit-scrollbar-track,
+  .context::-webkit-scrollbar-track,
+  .memo::-webkit-scrollbar-track,
+  .listArea::-webkit-scrollbar-track,
+  .writeArea::-webkit-scrollbar-track {
+    background-color: #e8e8e8;
   }

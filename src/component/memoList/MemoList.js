@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import MemoModal from "./MemoModal";
+import MemoModal from "../memoModal/MemoModal";
+import "./memoList.css";
 
 const MemoList = ({
   id,
@@ -23,22 +24,22 @@ const MemoList = ({
     <>
       <li>
         <a href="#!">
-          <div className="ListObject">
+          <div className="listObject">
             <div className={`likeBtn ${like ? 'likeBtnClick' : ''}`} onClick={likeBtnClick}></div>
             <div onClick={(e) => setModal(true)} className="modalBtn"></div>
-            <div className="Hole"></div>
+            <div className="hole"></div>
             <button className="delBtn" onClick={() => del(id)}>
-              <div className="Tack"></div>
+              <div className="tack"></div>
             </button>
 
             <div className="memoTitle">{title}</div>
             <div className="memoDate">{saveDate}</div>
-            <div className="Context">
+            <div className="context">
               {editTitle ? (
                 <input
                   type="text"
                   autoFocus
-                  className="ModifyTitle"
+                  className="modifyTitle"
                   maxLength="50"
                   defaultValue={title}
                   onBlur={(e) => {
@@ -57,7 +58,7 @@ const MemoList = ({
               <hr />
               {editMemo ? (
                 <textarea
-                  className="ModifyMemo"
+                  className="modifyMemo"
                   defaultValue={memo}
                   autoFocus
                   onBlur={(e) => {

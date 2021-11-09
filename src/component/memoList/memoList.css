@@ -1,10 +1,4 @@
-.ListArea {
-    background: #5e454b;
-    border: 10px solid #261c2c;
-    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
-  }
-  
-  li {
+    li {
     display: inline-block;
     vertical-align: top;
     width: 33.3%;
@@ -23,14 +17,14 @@
     box-shadow: 0 4px 4px -4px black;
   }
   
-  li > a .ListObject {
+  li > a .listObject {
     position: relative;
     width: 100%;
     height: 200px;
     overflow: hidden;
   }
   
-  li > a .ListObject .Context {
+  li > a .listObject .context {
     width: 100%;
     height: 80%;
     overflow: auto;
@@ -49,7 +43,7 @@
     background-image: linear-gradient(rgb(201, 201, 201) 0.1em, transparent 0.1em);
   } */
   
-  li > a:hover .Context {
+  li > a:hover .context {
     top: 20%;
   }
   
@@ -89,39 +83,14 @@
     font-weight: bold;
   }
   
-  .ModifyTitle {
+  .modifyTitle {
     width: 90%;
   }
   
-  .ModifyMemo {
+  .modifyMemo {
     width: 90%;
     height: 60%;
     resize: none;
-  }
-  
-  .ModifyMemo::-webkit-scrollbar,
-  .modalBox::-webkit-scrollbar,
-  .Context::-webkit-scrollbar,
-  .Memo::-webkit-scrollbar,
-  .ListArea::-webkit-scrollbar,
-  .WriteArea::-webkit-scrollbar {
-    width: 10px;
-  }
-  .ModifyMemo::-webkit-scrollbar-thumb,
-  .modalBox::-webkit-scrollbar-thumb,
-  .Context::-webkit-scrollbar-thumb,
-  .Memo::-webkit-scrollbar-thumb,
-  .ListArea::-webkit-scrollbar-thumb,
-  .WriteArea::-webkit-scrollbar-thumb {
-    background-color: #000;
-  }
-  .ModifyMemo::-webkit-scrollbar-track,
-  .modalBox::-webkit-scrollbar-track,
-  .Context::-webkit-scrollbar-track,
-  .Memo::-webkit-scrollbar-track,
-  .ListArea::-webkit-scrollbar-track,
-  .WriteArea::-webkit-scrollbar-track {
-    background-color: #e8e8e8;
   }
 
   .likeBtn{
@@ -166,7 +135,7 @@
     cursor: pointer;
   }
   
-  .Tack {
+  .tack {
     display: block;
     position: absolute;
     left: -20%;
@@ -185,7 +154,7 @@
     /* border-top: 5px solid transparent;
     border-right: 10px solid #b8b8b8; */
   }
-  .Hole {
+  .hole {
     position: absolute;
     background: #5e454b;
     border-radius: 50%;

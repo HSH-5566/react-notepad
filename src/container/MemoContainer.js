@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Memo from "../component/Memo";
-import MemoList from "../component/MemoList";
+import MemoForm from "../component/memoForm/MemoForm";
+import MemoList from "../component/memoList/MemoList";
 
 const MemoContainer = () => {
   const [title, setTitle] = useState("");
@@ -56,9 +56,9 @@ const MemoContainer = () => {
   };
 
   return (
-    <div className="Screen">
-      <div className="WriteArea">
-        <Memo
+    <div className="screen">
+      <div className="writeArea">
+        <MemoForm
           title={title}
           memo={memo}
           handleTitle={handleTitle}
@@ -67,7 +67,7 @@ const MemoContainer = () => {
           saveBtn={saveBtn}
         />
       </div>
-      <div className="ListArea">
+      <div className="listArea">
         {memoList.map((text) => (
           <MemoList
             key={text.id}

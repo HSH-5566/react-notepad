@@ -1,8 +1,9 @@
 import React from "react";
+import "./memoFunction.css";
 
 const MemoFunction = ({ removeBtn, saveBtn }) => {
   return (
-    <div className="FunctionArea">
+    <div className="functionArea">
       <button className="saveBtn" onClick={saveBtn}>
         SAVE
       </button>

@@ -1,17 +1,9 @@
-.WriteArea {
-    border: 10px solid #fff;
-    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.32);
-    background-color: #fff;
-    background-image: linear-gradient(#eee 0.1em, transparent 0.1em);
-    background-size: 100% 1.3em;
-  }
-  
-  .MemoArea {
+  .memoArea {
     width: 100%;
     height: 85%;
   }
   
-  .Title {
+  .title {
     border: none;
     border-bottom: 3px solid #5e454b;
     border-top: 3px solid #5e454b;
@@ -21,12 +13,12 @@
     height: 30px;
   }
   
-  .MemoArea > .TitleNum {
+  .memoArea > .titleNum {
     padding-left: 10px;
     font-size: 1.25em;
   }
   
-  .Memo {
+  .memo {
     border: 3px solid #5e454b;
     border-radius: 10px;
     font-size: 1.25em;
